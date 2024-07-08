@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Processing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="profile">
+                <h2>Profil + imagine</h2>
+                <img src="placeholder.jpg" alt="Profile Image" id="profile-image">
+            </div>
+            <div class="database">
+                <h2>Baza de date</h2>
+                <div id="database-content"></div>
+            </div>
+            <div class="projects">
+                <h2>Proiecte</h2>
+                <div class="dropzone" id="dropzone">
+                    Drag and drop files here
+                </div>
+            </div>
+            <div class="instructions">
+                <h2>Instructiuni pentru agenti</h2>
+                <textarea id="agent-instructions" placeholder="Te rog scrie aici instructiuni pentru agenti"></textarea>
+            </div>
+            <div class="saved-instructions">
+                <h2>Instructiuni salvate proiecte anterioare</h2>
+                <button id="saved-instruction-1">Instructiuni salvate proiect 1</button>
+            </div>
+        </div>
+        <div class="center-panel">
+            <div class="document" id="document-a">
+                <h2>Document A</h2>
+                <div class="document-content"></div>
+            </div>
+            <div class="document" id="document-b">
+                <h2>Document B</h2>
+                <div class="document-content"></div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="legend">
+                <h2>Legenda campuri completate agenti</h2>
+                <div id="legend-items">
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: yellow;"></span>
+                        <span class="legend-text">A1 - nume si prenume</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: orange;"></span>
+                        <span class="legend-text">A2 - seria CI</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: lightgreen;"></span>
+                        <span class="legend-text">A3 - CNP</span>
+                    </div>
+                </div>
+                <button id="add-field">Adauga campuri in legenda</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
